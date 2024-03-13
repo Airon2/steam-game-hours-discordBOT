@@ -3,7 +3,7 @@ To change the game, you need to change the "squad_app_id" to the game's ID.
 
 1) Creating an Application:
 
-- First, we need to create a Discord application. To do this, follow this link: https://discord.com/developers/applications. After successfully logging in to your Discord account, click on the "New Application" button and give the application a name.
+- First, we need to create a Discord application. To do this, follow this link: https://discord.com/developers/applications . After successfully logging in to your Discord account, click on the "New Application" button and give the application a name.
 
 - After creating the application, go to the "Bot" tab and click on "Reset Token". Save the token in a file called "Discord_API_TOKEN" in the "venv" directory. Also, tick all the checkboxes below "Privileged Gateway Intents".
 
@@ -32,7 +32,7 @@ https://steamcommunity.com/dev/apikey
 
 1) Создание Application'a:
 
-- Для начала нам нужно создать Discord Application, для этого мы должны перейти по этой ссылке: https://discord.com/developers/applications. После успешного входа в ваш аккаунт Discord, вам нужно нажать на кнопку New Application и выбрать имя для приложения.
+- Для начала нам нужно создать Discord Application, для этого мы должны перейти по этой ссылке: https://discord.com/developers/applications . После успешного входа в ваш аккаунт Discord, вам нужно нажать на кнопку New Application и выбрать имя для приложения.
 
 - После создания Application'а мы должны перейти во вкладку Bot, а затем нажамаем на Reset Token и сохраняем его в файле .venv в параметре Discord_API_TOKEN 
 - Также ставим галочки на все пункты ниже Privileged Gateway Intents
@@ -66,7 +66,7 @@ https://steamcommunity.com/dev/apikey
 
 1) Application Құру:
 
-- Бастау үшін біз Discord Application құруымыз керек, ол үшін мына сілтемеге өтуіміз керек: https://discord.com/developers/applications. Discord есептік жазбаңызға сәтті кіргеннен кейін жаңа қолданба түймесін басып, қолданбаның атын таңдау керек.
+- Бастау үшін біз Discord Application құруымыз керек, ол үшін мына сілтемеге өтуіміз керек: https://discord.com/developers/applications . Discord есептік жазбаңызға сәтті кіргеннен кейін жаңа қолданба түймесін басып, қолданбаның атын таңдау керек.
 
 - Application жасағаннан кейін біз Bot қойындысына өтуіміз керек, содан кейін Reset Token түймесін басып, оны файлға сақтаймыз .venv Discord_API_TOKEN параметрінде біз сонымен қатар Privileged Gateway Intents астындағы барлық элементтерді белгілейміз
 
