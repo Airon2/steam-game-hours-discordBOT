@@ -46,7 +46,7 @@ async def squad_command(interaction):
     try:
         user_games = steam.users.get_owned_games(steam_id.content)
     except Exception as e:
-        await interaction.followup.send_message(f"Error retrieving user information: {e}")
+        await interaction.followup.send(f"Error retrieving user information:")
         return
 
     # Extract the list of games
