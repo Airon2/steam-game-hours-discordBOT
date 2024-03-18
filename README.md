@@ -57,7 +57,7 @@ https://steamcommunity.com/dev/apikey
 `myvenv\Scripts\activate`
 
 - скачайте библиотеки 
-`pip install requirements.txt`
+`pip install -r requirements.txt`
 
 - запускаем main.py
 
