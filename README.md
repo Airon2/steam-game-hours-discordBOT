@@ -21,9 +21,9 @@ In order to connect our bot to your Discord server, follow these simple instruct
 https://steamcommunity.com/dev/apikey
 
 4) Launching the Bot:
-- Run the Python virtual environment by running the command ` python -m venv myvenv `
-- Activate the virtual environment running ` myvenv\Scripts\activate `.
-- Install the pip packages by running ` pip install -r requirements.txt `.
+- Run the Python virtual environment by running the command ` python -m venv myvenv 
+- Activate the virtual environment running ` myvenv\Scripts\activate `
+- Install the pip packages by running ` pip install -r requirements.txt `
 - Launch main.py
 
 Этот бот отображает количество часов, сыгранных в конкретной игре, которое можно настроить. 
