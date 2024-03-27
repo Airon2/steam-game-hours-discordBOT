@@ -1,9 +1,9 @@
 This bot shows the number of hours you have played in a specific game, which you can customize. Enter the statistics with the "/squadstats" command, then enter our Steam ID and the bot will show the number of hours we have spent playing.
 To change the game, you need to change the "squad_app_id" to the game's ID.
-/ squadstats shows game time in squad
-/ bindsteamid links Steam id to profile
-/ unbindsteamid unlink Steam id from profile
-/ rank shows all the roles of the user and his hours in the squad game
+- / squadstats shows game time in squad
+- / bindsteamid links Steam id to profile
+- / unbindsteamid unlink Steam id from profile
+- / rank shows all the roles of the user and his hours in the squad game
 
 1) Creating an Application:
 
@@ -33,10 +33,10 @@ https://steamcommunity.com/dev/apikey
 Этот бот отображает количество часов, сыгранных в конкретной игре, которое можно настроить. 
 Вводим статистику командой !squadstats, затем наш Steam ID, и bot отобразит количество сыгранных нами часов.
 Чтобы изменить игру, вам нужно изменить squad_app_id на id игры
-/ squadstats показывает игровое время в squad
-/ bindsteamid связывает Steam id с профилем
-/ unbindsteamid отвязывает Steam id от профиля
-/ rank показывает все роли пользователя и его часы в игре squad
+- / squadstats показывает игровое время в squad
+- / bindsteamid связывает Steam id с профилем
+- / unbindsteamid отвязывает Steam id от профиля
+- / rank показывает все роли пользователя и его часы в игре squad
 
 1) Создание Application'a:
 
@@ -71,10 +71,10 @@ https://steamcommunity.com/dev/apikey
 
 Қазақша нұсқасы: 
 Бұл бот белгілі бір ойында ойналатын сағат санын көрсетеді, оны теңшеуге болады. Статистиканы топпен енгізіңіз !squadstats, содан кейін Біздің Steam ID және bot біз ойнаған сағаттардың санын көрсетеді. Ойынды өзгерту үшін squad_app_id файлын ойын идентификаторына өзгерту керек
-/squadstats squadтағы ойын уақытын көрсетеді
-/bindsteamid Steam id профильге байланыстырады
-/unbindsteamid Steam id профильден ажыратады
-/rank Пайдаланушының барлық рөлдерін және оның squad ойынындағы сағаттарын көрсетеді
+- /squadstats squadтағы ойын уақытын көрсетеді
+- /bindsteamid Steam id профильге байланыстырады
+- /unbindsteamid Steam id профильден ажыратады
+- /rank Пайдаланушының барлық рөлдерін және оның squad ойынындағы сағаттарын көрсетеді
 
 1) Application Құру:
 
