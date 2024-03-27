@@ -11,7 +11,7 @@ To change the game, you need to change the "squad_app_id" to the game's ID.
 
 In order to connect our bot to your Discord server, follow these simple instructions:
 
-- Go to the OAuth2 section in the OAuth2 URL generator, select the "bot parameter", and in the "BOT PERMISSIONS" section, select the necessary permissions for your bot. In our case, these include "Send Messages", "Read Messages/View Channels", and "Use Slash Commands".
+- Go to OAuth2 in the OAuth2 URL Generator item, select the bot and application.commands parameter, in BOT PERMISSIONS select the necessary permissions in our case, this is Administrator and copy the GENERATED URL and paste it into a line in the browser and add the bot to our server.
  
 - Once you've selected these options, copy the "GENERATED URL" and paste it into the browser. Add your bot to your server by adding the URL to a line in your browser and connecting it to your server.
 
@@ -41,7 +41,7 @@ https://steamcommunity.com/dev/apikey
 
 - Для того чтобы подключить бота к вашему серверу Дискорд, нужно следовать простым инструкциям:
 
-- Заходим в OAuth2 в пункте OAuth2 URL Generator выбираем параметр bot, в BOT PERMISSIONS выбираем нужные разрешение в нашем случае это Send Messages,Read Messages/View Channels, Use Slash Commands и копируем GENERATED URL и вставляем в строку в браузере и добавляем бот на наш сервер.
+- Заходим в OAuth2 в пункте OAuth2 URL Generator выбираем параметр bot и application.commands, в BOT PERMISSIONS выбираем нужные разрешение в нашем случае это Administrator и копируем GENERATED URL и вставляем в строку в браузере и добавляем бот на наш сервер.
 
 3) Создание API Steam:
 
@@ -70,11 +70,11 @@ https://steamcommunity.com/dev/apikey
 
 - Application жасағаннан кейін біз Bot қойындысына өтуіміз керек, содан кейін Reset Token түймесін басып, оны файлға сақтаймыз .venv Discord_API_TOKEN параметрінде біз сонымен қатар Privileged Gateway Intents астындағы барлық элементтерді белгілейміз
 
-2) біздің ботты серверге қосыңыз:
+2) Біздің ботты серверге қосыңыз:
 
 - Ботты Дискорд серверіне қосу үшін қарапайым нұсқауларды орындау керек:
 
-- Біз OAuth2-ге OAuth2 GL Generator тармағында bot параметрін таңдаймыз, BOT PERMISSIONS - те қажетті рұқсатты таңдаймыз біздің жағдайда бұл Send Messages,Read Messages/View Channels, Use Slash commands және generated URL мекенжайын көшіріп, браузердегі жолға қойып, ботты біздің серверге қосамыз.
+- Біз OAuth2-ге OAuth2 GL Generator тармағында bot параметрін және application.commands таңдаймыз, BOT PERMISSIONS - те қажетті рұқсатты таңдаймыз біздің жағдайда бұл Administrator және generated URL мекенжайын көшіріп, браузердегі жолға қойып, ботты біздің серверге қосамыз.
 
 3) Steam API құру:
 
