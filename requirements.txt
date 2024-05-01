@@ -7,25 +7,20 @@ cachetools==5.3.3
 certifi==2023.7.22
 charset-normalizer==3.3.0
 comtypes==1.2.0
-cowsay==5.0
 discord-py-slash-command==4.2.1
 discord-typings==0.8.0
-Django==5.0.1
 emoji==2.10.1
 frozenlist==1.4.1
 idna==3.4
 interactions.py @ git+https://github.com/discord-py-slash-commands/discord-py-interactions.git@1a7de56b2085bdd62be77bfbb0f12506982d0858
 multidict==6.0.5
 psycopg2==2.9.9
-PyAudio==0.2.13
 pycryptodomex==3.20.0
 pypiwin32==223
 python-dotenv==1.0.0
 pyttsx3==2.90
 pywin32==306
 requests==2.31.0
-six==1.16.0
-SpeechRecognition==3.10.0
 sqlparse==0.4.4
 steam==1.4.4
 tomli==2.0.1
