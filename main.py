@@ -99,6 +99,8 @@ async def assign_role_based_on_playtime(guild, member, squad_playtime_hours):
         role_to_assign = discord.utils.get(guild.roles, name="🔰Сержант")
     elif squad_playtime_hours >= 50:
         role_to_assign = discord.utils.get(guild.roles, name="Рядовой")
+    else:
+        role_to_assign = discord.utils.get(guild.roles, name="Рядовой")  # Роль для всех с менее чем 50 часами
     
     if role_to_assign:
         # Проверяем, есть ли у пользователя уже данная роль
@@ -123,9 +125,9 @@ async def assign_role_based_on_playtime(guild, member, squad_playtime_hours):
                 
                 # Добавляем новую роль
                 await member.add_roles(role_to_assign)
-                print(f"Role '{role_to_assign.name}' assigned to {member.name}")
+                print(f"Роль '{role_to_assign.name}' назначен на {member.name}")
             except discord.HTTPException as e:
-                print(f"Failed to assign role to {member.name}: {e}")
+                print(f"Не удалось назначить роль {member.name}: {e}")
     else:
         print("No role assigned based on Squad playtime.")
 
@@ -150,7 +152,7 @@ async def on_ready():
     print("Бот Discord запущен.")
     try:
         synced = await tree.sync()
-        print(f"Synced {len(synced)} command(s)")
+        print(f"Синхронизировано {len(synced)} команд")
     except Exception as e:
         print(e)
     # Загрузка данных о пользователях при запуске бота
@@ -298,7 +300,7 @@ async def show_ranks(interaction: discord.Interaction):
         await interaction.response.send_message("Қате: пайдаланушы ойындары табылмады")
         return
 
-   # Ищем Squad и Ready Or Not в списке игр
+   # Ищем Squad и Ready Or Not и pubg в списке игр
     squad_playtime = None
     ron_playtime = None
     pubg_playtime = None
