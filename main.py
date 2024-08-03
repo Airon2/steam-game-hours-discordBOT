@@ -4,7 +4,6 @@ from steam import Steam
 from decouple import config
 import asyncio
 import json
-
 # Получаем ключ API Steam и токен Discord из переменных среды или файла .env
 KEY = config("STEAM_API_KEY")
 TOKEN = config("Discord_API_TOKEN")
@@ -216,18 +215,29 @@ async def unbind_command(interaction: discord.Interaction):
         return
     
     # Проверяем, был ли привязан Steam ID к этому пользователю
-    if interaction.user.id not in users:
-        await interaction.response.send_message("Сіздің Steam ID профильға қосылып тұрған жок")
+    steam_id = get_steam_id_from_json(interaction.user.id)
+    if not steam_id:
+        await interaction.response.send_message("Сіздің Steam ID профильге байланбаған.")
         return
 
-    # Удаляем данные пользователя из словаря users
-    del users[interaction.user.id]
+    # Удаляем данные пользователя из файла users.json
+    try:
+        with open("users.json", "r") as f:
+            users = json.load(f)
+    except FileNotFoundError:
+        print("Файл users.json не найден.")
+        users = {}
 
-    # Сохраняем данные пользователей в файл users.json
-    save_users()
-
-    # Отправляем сообщение об успешной отвязке
-    await interaction.response.send_message("Сіздің Steam ID профильден сәтті ажыратылды.")
+    if str(interaction.user.id) in users:
+        del users[str(interaction.user.id)]
+        # Сохраняем изменения в файл users.json
+        with open("users.json", "w") as f:
+            json.dump(users, f)
+        
+        # Отправляем сообщение об успешной отвязке
+        await interaction.response.send_message("Сіздің Steam ID профильден сәтті ажыратылды.")
+    else:
+        await interaction.response.send_message("Сіздің Steam ID профильге байланбаған.")
 
 @tree.command(name="steamid", description="Отображает имена и Steam ID привязанных пользователей")
 async def show_steamids(interaction: discord.Interaction):
